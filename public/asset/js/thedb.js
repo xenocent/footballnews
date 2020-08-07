@@ -70,7 +70,6 @@ function getAllTimDB() {
         return store.getAll();
       })
       .then(function (tim) {
-        setTimeout(function(){loadPage('favtim')}, 3000);
         resolve(tim);
       }).catch(function () {
         reject("Tidak ada Data");

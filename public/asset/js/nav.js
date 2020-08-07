@@ -48,6 +48,7 @@ loadPage(page);
 function loadPage(page,id = null) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
+    console.log(page)
     if (this.readyState == 4) {
       var content = document.querySelector("#body-content");
       if (page === "home") {
